@@ -3,81 +3,397 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latihan WEB03</title>
-    <link rel="stylesheet" href="stylelat3.css">
+    <title>PORTOFOLIO PUNYA AKU</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/stylelat4.css">
 </head>
-<body>
-    <!-- Header/Navigation -->
-    <div class="header">
-        <div class="logo">Logo</div>
-        <nav class="nav-menu">
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
+<body data-spy="scroll" data-target="#navbarNav" data-offset="80">
+  <!-- Navigation -->
+  <nav id="mainNav" class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+          <a class="navbar-brand" href="#home">
+              <div class="brand-wrapper">
+                <img src="E:\MHS-11B1\NIKE_20236015\Latihan 4\asset\img\PFF1.png" alt="Logo Eunike" class="brand-logo">
+              </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#skills">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#projects">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+      <div class="hero-background">
+          <div class="hero-overlay"></div>
+      </div>
+      <div class="container">
+          <div class="row align-items-center min-vh-100">
+              <div class="col-lg-8 mx-auto text-center">
+                  <div class="hero-content">
+                      <div class="hero-badge">
+                          <i class="fas fa-cog"></i>
+                          MEKATRONIKA ENGINEER
+                      </div>
+                      <h1 class="hero-title">
+                          <span class="title-greeting">HI! I'M</span>
+                          <span class="title-name">EUNIKE GRACELINE</span>
+                      </h1>
+                      <p class="hero-subtitle">
+                          <i class="fas fa-graduation-cap"></i>
+                          Mahasiswa Mekatronika | POLITEKNIK ATMI SURAKARTA
+                      </p>
+                      <p class="hero-description">
+                          Membangun masa depan melalui inovasi di bidang otomasi, IoT, dan sistem cerdas 
+                          yang menghubungkan manusia dengan teknologi secara seamless.
+                      </p>
+                      <div class="hero-actions">
+                          <a href="#projects" class="btn btn-primary btn-lg">
+                              <i class="fas fa-rocket"></i>
+                              Lihat Projek Saya
+                          </a>
+                          <a href="#contact" class="btn btn-outline btn-lg">
+                              <i class="fas fa-paper-plane"></i>
+                              Hubungi Saya
+                          </a>
+                      </div>
+      <div class="scroll-indicator">
+          <div class="mouse">
+              <div class="wheel"></div>
+          </div>
+          <p>Scroll untuk menjelajahi</p>
+      </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+      <div class="container">
+          <div class="section-header">
+              <h2 class="section-title">Tentang Saya</h2>
+              <div class="section-subtitle">Mengenal Lebih Dekat</div>
+          </div>
+          <div class="row align-items-center">
+              <div class="col-lg-4 text-center">
+                  <div class="about-image-wrapper">
+                      <img src="E:\MHS-11B1\NIKE_20236015\Latihan 4\asset\img\anaklucu.jpg" alt="Eunike Graceline" class="about-image">
+                      <div class="image-decoration">
+                          <div class="decoration-circle circle-1"></div>
+                          <div class="decoration-circle circle-2"></div>
+                          <div class="decoration-circle circle-3"></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-8">
+                  <div class="about-content">
+                      <h3 class="about-heading">Inovator Muda di Bidang Mekatronika</h3>
+                      <div class="about-text">
+                          <p>
+                              Saya adalah mahasiswa mekatronika yang percaya bahwa masa depan dibangun dari 
+                              inovasi dan keberanian bereksperimen. Tertarik pada dunia otomasi, IoT, dan 
+                              sistem cerdas yang menghubungkan manusia dengan teknologi secara seamless.
+                          </p>
+                          <p>
+                              Setiap proyek bagi saya adalah langkah menuju masa depan yang lebih efisien 
+                              dan futuristik. Saya berkomitmen untuk menciptakan solusi yang menggabungkan 
+                              kecerdasan buatan, robotika, dan sistem embedded untuk menyelesaikan 
+                              tantangan dunia nyata.
+                          </p>
+                      </div>
+                      <div class="about-features">
+                          <div class="feature-item">
+                              <i class="fas fa-bolt"></i>
+                              <span>Berpikir Kreatif</span>
+                          </div>
+                          <div class="feature-item">
+                              <i class="fas fa-puzzle-piece"></i>
+                              <span>Pemecah Masalah</span>
+                          </div>
+                          <div class="feature-item">
+                              <i class="fas fa-users"></i>
+                              <span>Team Player</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+      <div class="container">
+          <div class="section-header">
+              <h2 class="section-title">Keahlian Saya</h2>
+              <div class="section-subtitle">Teknologi yang Dikuasai</div>
+          </div>
+          <div class="row">
+              <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="skill-card">
+                      <div class="skill-icon-wrapper">
+                          <img src="E:\MHS-11B1\NIKE_20236015\Latihan 4\asset\img\autosystem.png" alt="Automation System" class="skill-icon">
+                          <div class="icon-overlay">
+                              <i class="fas fa-cogs"></i>
+                          </div>
+                      </div>
+                      <h4 class="skill-title">Automation System</h4>
+                      <p class="skill-description">
+                          Perancangan dan implementasi sistem otomasi industri menggunakan PLC, 
+                          HMI, dan sistem kontrol modern untuk meningkatkan efisiensi produksi.
+                      </p>
+                      <div class="skill-progress">
+                          <div class="progress-bar" data-width="90"></div>
+                          <span>90%</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="skill-card">
+                      <div class="skill-icon-wrapper">
+                          <img src="E:\MHS-11B1\NIKE_20236015\Latihan 4\asset\img\IOT.png" alt="IoT Development" class="skill-icon">
+                          <div class="icon-overlay">
+                              <i class="fas fa-wifi"></i>
+                          </div>
+                      </div>
+                      <h4 class="skill-title">Embedded & IoT Development</h4>
+                      <p class="skill-description">
+                          Pengembangan sistem embedded dan Internet of Things menggunakan 
+                          microcontroller dan sensor untuk solusi connected devices.
+                      </p>
+                      <div class="skill-progress">
+                          <div class="progress-bar" data-width="85"></div>
+                          <span>85%</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="skill-card">
+                      <div class="skill-icon-wrapper">
+                          <img src="E:\MHS-11B1\NIKE_20236015\Latihan 4\asset\img\meii.jpg" alt="Mechatronic Integration" class="skill-icon">
+                          <div class="icon-overlay">
+                              <i class="fas fa-robot"></i>
+                          </div>
+                      </div>
+                      <h4 class="skill-title">Mechatronic Integration</h4>
+                      <p class="skill-description">
+                          Integrasi sistem mekanik, elektrik, dan pemrograman untuk menciptakan 
+                          sistem mekatronika yang komprehensif dan efisien.
+                      </p>
+                      <div class="skill-progress">
+                          <div class="progress-bar" data-width="88"></div>
+                          <span>88%</span>
+                      </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+      <div class="container">
+          <div class="section-header">
+              <h2 class="section-title">Projek Terbaru</h2>
+              <div class="section-subtitle">Karya dan Inovasi</div>
+          </div>
+          <div class="row">
+              <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="project-card">
+                      <div class="project-image">
+                          <img src="E:\MHS-11B1\NIKE_20236015\Latihan 4\asset\img\smart-factory.jpg" alt="Smart Factory System" class="img-fluid">
+                          <div class="project-overlay">
+                              <div class="project-links">
+                                  <a href="#" class="project-link">
+                                      <i class="fas fa-eye"></i>
+                                  </a>
+                                  <a href="#" class="project-link">
+                                      <i class="fas fa-external-link-alt"></i>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="project-content">
+                          <h4 class="project-title">Smart Factory Automation</h4>
+                          <p class="project-description">
+                              Sistem otomasi pabrik cerdas menggunakan PLC dan SCADA untuk monitoring 
+                              dan kontrol proses produksi secara real-time.
+                          </p>
+                          <div class="project-tech">
+                              <span class="tech-tag">PLC</span>
+                              <span class="tech-tag">SCADA</span>
+                              <span class="tech-tag">HMI</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="project-card">
+                      <div class="project-image">
+                          <img src="E:\MHS-11B1\NIKE_20236015\Latihan 4\asset\img\iotmon.png" alt="IoT Monitoring" class="img-fluid">
+                          <div class="project-overlay">
+                              <div class="project-links">
+                                  <a href="#" class="project-link">
+                                      <i class="fas fa-eye"></i>
+                                  </a>
+                                  <a href="#" class="project-link">
+                                      <i class="fas fa-external-link-alt"></i>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="project-content">
+                          <h4 class="project-title">IoT Environmental Monitor</h4>
+                          <p class="project-description">
+                              Sistem monitoring lingkungan berbasis IoT dengan sensor suhu, kelembaban, 
+                              dan kualitas udara terintegrasi cloud.
+                          </p>
+                          <div class="project-tech">
+                              <span class="tech-tag">ESP32</span>
+                              <span class="tech-tag">IoT</span>
+                              <span class="tech-tag">Cloud</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="project-card">
+                      <div class="project-image">
+                          <img src="E:\MHS-11B1\NIKE_20236015\Latihan 4\asset\img\robotarm.png" alt="Robotic Arm" class="img-fluid">
+                          <div class="project-overlay">
+                              <div class="project-links">
+                                  <a href="#" class="project-link">
+                                      <i class="fas fa-eye"></i>
+                                  </a>
+                                  <a href="#" class="project-link">
+                                      <i class="fas fa-external-link-alt"></i>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="project-content">
+                          <h4 class="project-title">6-Axis Robotic Arm</h4>
+                          <p class="project-description">
+                              Lengan robot 6 sumbu dengan kontrol presisi tinggi untuk aplikasi 
+                              pick-and-place dalam lingkungan industri.
+                          </p>
+                          <div class="project-tech">
+                              <span class="tech-tag">Arduino</span>
+                              <span class="tech-tag">Servo</span>
+                              <span class="tech-tag">3D Print</span>
+                          </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Hubungi Saya</h2>
+      <div class="section-subtitle">Mari Berkolaborasi</div>
     </div>
 
-    <!-- Hero Section -->
-    <div id="home" class="hero-section">
-        <div class="hero-content">
-            Hero (Image, Slogan, Kontak, dll)
-        </div>
-    </div>
-
-    <!-- Services Section -->
-    <div id="services" class="services-section">
-        <div class="section-title">Services</div>
-        <div class="services-grid">
-            <div class="service-card">
-                <h2>Heading</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p>
-            </div>
-            <div class="service-card">
-                <h2>Heading</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p>
-            </div>
-            <div class="service-card">
-                <h2>Heading</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- About Section -->
-    <div id="about" class="about-section">
-        <div class="section-title">About</div>
-        <div class="about-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-            <div class="about-flex">
-                <div class="about-text">
-                    <h2>Heading</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="contact-card">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="contact-info">
+                
+                <!-- Email -->
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <img src="E:\MHS-11B1\NIKE_20236015\Latihan 4\asset\img\logo-email.jpg" alt="Email Icon">
+                  </div>
+                  <div class="contact-details">
+                    <h5>Email</h5>
+                    <p>eunikegraceline1204@gmail.com</p>
+                  </div>
                 </div>
-                <div class="about-performance">
-                    <h2>Performance</h2>
-                    <img src="C:\Users\MHS-11B1\Downloads\kucinglucu.jpg" alt="bola" width="500" height="300">
+
+                <!-- Telepon -->
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <img src="E:\MHS-11B1\NIKE_20236015\Latihan 4\asset\img\logo-tlpn.jpg" alt="Telepon Icon">
+                  </div>
+                  <div class="contact-details">
+                    <h5>Telepon</h5>
+                    <p>+62 817-7289-3687</p>
+                  </div>
                 </div>
+
+                <!-- Lokasi -->
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <img src="E:\MHS-11B1\NIKE_20236015\Latihan 4\asset\img\loc-ic.png" alt="Lokasi Icon">
+                  </div>
+                  <div class="contact-details">
+                    <h5>Lokasi</h5>
+                    <p>Surakarta, Indonesia</p>
+                  </div>
+                </div>
+
+              </div>
             </div>
+
+           <!-- Follow Me Section -->
+           <div class="col-md-6">
+            <div class="social-section">
+              <h5>Follow Me</h5>
+              <div class="social-links">
+                <a href="#" class="social-link">
+                  <img src="E:\MHS-11B1\NIKE_20236015\Latihan 4\asset\img\linkid.png" alt="LinkedIn">
+                </a>
+                <a href="#" class="social-link">
+                  <img src="E:\MHS-11B1\NIKE_20236015\Latihan 4\asset\img\github.png" alt="GitHub">
+                </a>
+                <a href="#" class="social-link">
+                  <img src="E:\MHS-11B1\NIKE_20236015\Latihan 4\asset\img\instagram.png" alt="Instagram">
+                </a>
+              </div>
+            </div>
+          </div>
+
         </div>
+      </div>
     </div>
+  </div>
+</div>
+</section>
 
-    <!-- Contact Section -->
-    <div id="contact" class="contact-section">
-        <div class="section-title">Contact</div>
-        <form class="contact-form">
-            <div class="form-row">
-                <input type="text" placeholder="   ">
-                <input type="email" placeholder="    ">
-            </div>
-            <textarea placeholder="   "></textarea>
-            <button type="submit">Kirim</button>
-        </form>
-    </div>
-
-    <!-- Footer -->
-    <div class="footer">
-        Footer
-    </div>
+  <!-- Footer -->
+  <footer class="footer">
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col-md-6">
+                  <p class="footer-text">
+                      &copy; 2024 <strong>Eunike Graceline</strong>. All rights reserved.
+                  </p>
+              </div>
+              <div class="col-md-6 text-md-right">
+                  <p class="footer-text">
+                      Dibuat dengan <i class="fas fa-heart text-danger"></i> dan <i class="fas fa-bolt text-warning"></i>
+                  </p>
+              </div>
+          </div>
+      </div>
+  </footer>
 </body>
 </html>
