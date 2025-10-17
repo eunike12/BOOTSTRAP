@@ -6,6 +6,9 @@
     <title>PORTOFOLIO PUNYA AKU</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="asset/css/stylelat4.css">
+
+    <!-- === ChartJS Added === -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body data-spy="scroll" data-target="#navbarNav" data-offset="80">
   <!-- Navigation -->
@@ -14,6 +17,7 @@
           <a class="navbar-brand" href="#home">
               <div class="brand-wrapper">
                 <img src="E:\MHS-11B1\NIKE_20236015\Latihan 4\asset\img\PFF1.png" alt="Logo Eunike" class="brand-logo">
+                <span class="brand-text">EUNIKE_GRACELINE</span>
               </div>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
@@ -66,7 +70,8 @@
                           Membangun masa depan melalui inovasi di bidang otomasi, IoT, dan sistem cerdas 
                           yang menghubungkan manusia dengan teknologi secara seamless.
                       </p>
-                      <div class="hero-actions">
+                      <div class="hero-action-wrapper">
+                         <div class="hero-actions">
                           <a href="#projects" class="btn btn-primary btn-lg">
                               <i class="fas fa-rocket"></i>
                               Lihat Projek Saya
@@ -75,6 +80,7 @@
                               <i class="fas fa-paper-plane"></i>
                               Hubungi Saya
                           </a>
+                          </div>
                       </div>
       <div class="scroll-indicator">
           <div class="mouse">
@@ -85,125 +91,176 @@
   </section>
 
   <!-- About Section -->
-  <section id="about" class="about-section">
-      <div class="container">
-          <div class="section-header">
-              <h2 class="section-title">Tentang Saya</h2>
-              <div class="section-subtitle">Mengenal Lebih Dekat</div>
-          </div>
-          <div class="row align-items-center">
-              <div class="col-lg-4 text-center">
-                  <div class="about-image-wrapper">
-                      <img src="E:\MHS-11B1\NIKE_20236015\Latihan 4\asset\img\anaklucu.jpg" alt="Eunike Graceline" class="about-image">
-                      <div class="image-decoration">
-                          <div class="decoration-circle circle-1"></div>
-                          <div class="decoration-circle circle-2"></div>
-                          <div class="decoration-circle circle-3"></div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-lg-8">
-                  <div class="about-content">
-                      <h3 class="about-heading">Inovator Muda di Bidang Mekatronika</h3>
-                      <div class="about-text">
-                          <p>
-                              Saya adalah mahasiswa mekatronika yang percaya bahwa masa depan dibangun dari 
-                              inovasi dan keberanian bereksperimen. Tertarik pada dunia otomasi, IoT, dan 
-                              sistem cerdas yang menghubungkan manusia dengan teknologi secara seamless.
-                          </p>
-                          <p>
-                              Setiap proyek bagi saya adalah langkah menuju masa depan yang lebih efisien 
-                              dan futuristik. Saya berkomitmen untuk menciptakan solusi yang menggabungkan 
-                              kecerdasan buatan, robotika, dan sistem embedded untuk menyelesaikan 
-                              tantangan dunia nyata.
-                          </p>
-                      </div>
-                      <div class="about-features">
-                          <div class="feature-item">
-                              <i class="fas fa-bolt"></i>
-                              <span>Berpikir Kreatif</span>
-                          </div>
-                          <div class="feature-item">
-                              <i class="fas fa-puzzle-piece"></i>
-                              <span>Pemecah Masalah</span>
-                          </div>
-                          <div class="feature-item">
-                              <i class="fas fa-users"></i>
-                              <span>Team Player</span>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
+<section id="about" class="about-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Tentang Saya</h2>
+        <div class="section-subtitle">Mengenal Lebih Dekat</div>
       </div>
+      <div class="row align-items-center">
+        <div class="col-lg-4 text-center">
+          <div class="about-image-wrapper">
+            <img src="E:\MHS-11B1\NIKE_20236015\Latihan 4\asset\img\anaklucu.jpg" alt="Eunike Graceline" class="about-image">
+            <div class="image-decoration">
+              <div class="decoration-circle circle-1"></div>
+              <div class="decoration-circle circle-2"></div>
+              <div class="decoration-circle circle-3"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="about-content">
+            <h3 class="about-heading">Inovator Muda di Bidang Mekatronika</h3>
+            <div class="about-text">
+              <p>
+                Saya adalah mahasiswa mekatronika yang percaya bahwa masa depan dibangun dari 
+                inovasi dan keberanian bereksperimen. Tertarik pada dunia otomasi, IoT, dan 
+                sistem cerdas yang menghubungkan manusia dengan teknologi secara seamless.
+              </p>
+              <p>
+                Setiap proyek bagi saya adalah langkah menuju masa depan yang lebih efisien 
+                dan futuristik. Saya berkomitmen untuk menciptakan solusi yang menggabungkan 
+                kecerdasan buatan, robotika, dan sistem embedded untuk menyelesaikan 
+                tantangan dunia nyata.
+              </p>
+            </div>
+            <div class="about-features mb-4">
+              <div class="feature-item">
+                <i class="fas fa-bolt"></i>
+                <span>Berpikir Kreatif</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-puzzle-piece"></i>
+                <span>Pemecah Masalah</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-users"></i>
+                <span>Team Player</span>
+              </div>
+            </div>
+  
+            <!-- === ChartJS Added === -->
+            <div class="about-chart text-center">
+              <h5 class="mb-3">Statistik Minat & Fokus Saya</h5>
+              <canvas id="aboutChart" width="400" height="200"></canvas>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="skills-section">
-      <div class="container">
-          <div class="section-header">
-              <h2 class="section-title">Keahlian Saya</h2>
-              <div class="section-subtitle">Teknologi yang Dikuasai</div>
-          </div>
-          <div class="row">
-              <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="skill-card">
-                      <div class="skill-icon-wrapper">
-                          <img src="E:\MHS-11B1\NIKE_20236015\Latihan 4\asset\img\autosystem.png" alt="Automation System" class="skill-icon">
-                          <div class="icon-overlay">
-                              <i class="fas fa-cogs"></i>
-                          </div>
-                      </div>
-                      <h4 class="skill-title">Automation System</h4>
-                      <p class="skill-description">
-                          Perancangan dan implementasi sistem otomasi industri menggunakan PLC, 
-                          HMI, dan sistem kontrol modern untuk meningkatkan efisiensi produksi.
-                      </p>
-                      <div class="skill-progress">
-                          <div class="progress-bar" data-width="90"></div>
-                          <span>90%</span>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="skill-card">
-                      <div class="skill-icon-wrapper">
-                          <img src="E:\MHS-11B1\NIKE_20236015\Latihan 4\asset\img\IOT.png" alt="IoT Development" class="skill-icon">
-                          <div class="icon-overlay">
-                              <i class="fas fa-wifi"></i>
-                          </div>
-                      </div>
-                      <h4 class="skill-title">Embedded & IoT Development</h4>
-                      <p class="skill-description">
-                          Pengembangan sistem embedded dan Internet of Things menggunakan 
-                          microcontroller dan sensor untuk solusi connected devices.
-                      </p>
-                      <div class="skill-progress">
-                          <div class="progress-bar" data-width="85"></div>
-                          <span>85%</span>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="skill-card">
-                      <div class="skill-icon-wrapper">
-                          <img src="E:\MHS-11B1\NIKE_20236015\Latihan 4\asset\img\meii.jpg" alt="Mechatronic Integration" class="skill-icon">
-                          <div class="icon-overlay">
-                              <i class="fas fa-robot"></i>
-                          </div>
-                      </div>
-                      <h4 class="skill-title">Mechatronic Integration</h4>
-                      <p class="skill-description">
-                          Integrasi sistem mekanik, elektrik, dan pemrograman untuk menciptakan 
-                          sistem mekatronika yang komprehensif dan efisien.
-                      </p>
-                      <div class="skill-progress">
-                          <div class="progress-bar" data-width="88"></div>
-                          <span>88%</span>
-                      </div>
-          </div>
-      </div>
-  </section>
+  <!-- === ChartJS Script === -->
+<script>
+    const ctx = document.getElementById('aboutChart').getContext('2d');
+    const aboutChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Otomasi', 'IoT', 'Robotika', 'AI', 'Embedded System'],
+        datasets: [{
+          label: 'Tingkat Minat (%)',
+          data: [90, 85, 88, 75, 80],
+          backgroundColor: [
+            'rgba(75, 192, 192, 0.6)',
+            'rgba(255, 159, 64, 0.6)',
+            'rgba(153, 102, 255, 0.6)',
+            'rgba(255, 99, 132, 0.6)',
+            'rgba(54, 162, 235, 0.6)'
+          ],
+          borderColor: [
+            'rgba(75, 192, 192, 1)',
+            'rgba(255, 159, 64, 1)',
+            'rgba(153, 102, 255, 1)',
+            'rgba(255, 99, 132, 1)',
+            'rgba(54, 162, 235, 1)'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 100,
+            title: {
+              display: true,
+              text: 'Persentase (%)'
+            }
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          title: {
+            display: true,
+            text: 'Minat Bidang Teknologi (Data Statis)'
+          }
+        }
+      }
+    });
+  </script>
+  
+  
+   <!-- Skills Section -->
+   <section id="skills" class="skills-section">
+    <div class="section-background"></div>
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Tujuan Saya</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <img src="E:\MHS-11B1\NIKE_20236015\Latihan Javascript04\asset\img\ino.png" alt="Automation System" class="skill-icon">
+                        <div class="icon-overlay">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                    </div>
+                    <h4 class="skill-title">INOVASI PRODUK</h4>
+                    <p class="skill-description">
+                        Aku ingin menciptakan inovasi yang memberi dampak positif bagi banyak orang.
+                        Teknologi bagiku adalah sarana untuk mempermudah hidup dan membawa kebaikan.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <img src="E:\MHS-11B1\NIKE_20236015\Latihan Javascript04\asset\img\robotika.png" alt="IoT Development" class="skill-icon">
+                        <div class="icon-overlay">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                    </div>
+                    <h4 class="skill-title">Menjadi Ahli Robotika</h4>
+                    <p class="skill-description">
+                        Aku bercita-cita menjadi ahli robotika yang mampu memadukan logika dan kreativitas.
+                        Robotika adalah cara bagiku untuk mewujudkan ide menjadi sistem yang cerdas dan bermanfaat.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <img src="E:\MHS-11B1\NIKE_20236015\Latihan Javascript04\asset\img\bagi-buku.png" alt="Mechatronic Integration" class="skill-icon">
+                        <div class="icon-overlay">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                    <h4 class="skill-title">Berbagi Pengetahuan</h4>
+                    <p class="skill-description">
+                        Aku percaya ilmu akan lebih bermakna ketika dibagikan kepada orang lain.
+                        Dengan berbagi, aku ingin menginspirasi dan tumbuh bersama generasi berikutnya.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
   <!-- Projects Section -->
   <section id="projects" class="projects-section">
@@ -216,7 +273,7 @@
               <div class="col-lg-4 col-md-6 mb-4">
                   <div class="project-card">
                       <div class="project-image">
-                          <img src="E:\MHS-11B1\NIKE_20236015\Latihan 4\asset\img\smart-factory.jpg" alt="Smart Factory System" class="img-fluid">
+                          <img src="E:\MHS-11B1\NIKE_20236015\Latihan Javascript04\asset\img\smart-factory.jpg" alt="Smart Factory System" class="img-fluid">
                           <div class="project-overlay">
                               <div class="project-links">
                                   <a href="#" class="project-link">
